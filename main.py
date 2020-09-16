@@ -60,16 +60,6 @@ while True:
 		print("ID: " + str(info.id))
 		print("Номер телефона: " + str(info.phone))
 		print("=======================")
-	elif command == "dialogs":
-		print(Fore.WHITE + Back.BLACK + "===== ЧАТЫ =====")
-		for dialog in client.iter_dialogs():
-			print("Название чата: " + dialog.name)
-			if dialog.message.message:
-				print("Последнее сообщение: " + dialog.message.message)
-			else:
-				print("Последнее сообщение: ")
-			print("-----")
-		print("================" + Style.RESET_ALL)
 	elif command == "voice":
 		path = input("Введите путь до файла: ")
 		to = input("Введите ник собеседника: ")
